@@ -39,8 +39,13 @@ function DateTime() {
                <DateTimePicker value={fromDate} onChange={(value)=>setFromDate(value)} />
             </div>
             <div className="duration">
+<<<<<<< HEAD
                 <p>Duration:</p>
                 <input type="number" placeholder="duration in milliseconds" value={duration} onChange={(e)=>setDuration(e.target.value)}/>
+=======
+                <p>Duration :</p>
+                <input type="number" placeholder="Duration in days" value={duration} onChange={(e)=>setDuration(e.target.value)}/>
+>>>>>>> d0fbc3218e4f880bd6822a99aa639939ecf439f6
             </div>
             <div className="from_date">
                 <p>To Date:</p>
