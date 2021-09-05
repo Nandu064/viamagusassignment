@@ -48,12 +48,12 @@ function Login() {
                 <div className="inner_form_container">
                   <p className="form_title">Login</p> 
                   <div className="inner_bg"></div> 
-                  <input name="email" type="email"  placeholder="Email" value={email} onChange={(e)=>handleEmail(e)} />
+                  <input className="form_input" name="email" type="email"  placeholder="Email" value={email} onChange={(e)=>handleEmail(e)} />
                   <span className={`err_msg ${emailErr}`}>
                     <img className="error_img" src={Error} />
                     <span className="error_text">The email field is required</span>
                   </span>
-                  <input name="password" type="password"  placeholder="Password" value={password} onChange={(e)=>handlePassword(e)} />
+                  <input className="form_input" name="password" type="password"  placeholder="Password" value={password} onChange={(e)=>handlePassword(e)} />
                   <span  className={`err_msg ${passErr}`}>
                     <img className="error_img" src={Error} />
                     <span className="error_text">The password field is required</span>
