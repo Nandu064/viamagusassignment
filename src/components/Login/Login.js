@@ -43,19 +43,19 @@ function Login() {
             <div className="form__container">
               <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <div className="top">
-                  <img className="logo" src={Logo} />        
+                  <img alt="logo" className="logo" src={Logo} />        
                 </div>
                 <div className="inner_form_container">
                   <p className="form_title">Login</p> 
                   <div className="inner_bg"></div> 
                   <input className="form_input" name="email" type="email"  placeholder="Email" value={email} onChange={(e)=>handleEmail(e)} />
                   <span className={`err_msg ${emailErr}`}>
-                    <img className="error_img" src={Error} />
+                    <img alt="errorImg" className="error_img" src={Error} />
                     <span className="error_text">The email field is required</span>
                   </span>
                   <input className="form_input" name="password" type="password"  placeholder="Password" value={password} onChange={(e)=>handlePassword(e)} />
                   <span  className={`err_msg ${passErr}`}>
-                    <img className="error_img" src={Error} />
+                    <img alt="errorImg" className="error_img" src={Error} />
                     <span className="error_text">The password field is required</span>
                   </span>
                   
@@ -66,11 +66,11 @@ function Login() {
                   </div>
                   <p className="or">or</p>
                   <div className="google_btn">
-                    <img src={google} className="google_btn_logo"></img>
+                    <img alt="googleLogo" src={google} className="google_btn_logo"></img>
                     <p className="google_btn_text">continue with google</p>
                   </div>
                   <div className="facebook_btn">
-                    <img src={fb} className="facebook_btn_logo"></img>
+                    <img alt="FbLogo" src={fb} className="facebook_btn_logo"></img>
                     <p className="facebook_btn_text">continue with facebook</p>
                   </div>
                 </div>

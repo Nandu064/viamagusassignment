@@ -1,24 +1,37 @@
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Date from './components/DateTime/DateTime';
 import Login from './components/Login/Login';
 import Video from './components/Video/Video';
 function App() {
   return (
-    <div className="App">
+    <Router>
+          <div className="App">
         <header className="header">
           <nav>
-            <ul>
-              <li>Login Component</li>
-              <li>Video</li>
-              <li>Date</li>
-            </ul>
+          <ul>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/date">Date</a></li>
+          <li><a href="/video">Video</a></li>
+          </ul>
           </nav>
-
         </header>
-        {/* <Login/> */}
-        {/* <Video /> */}
-        <Date />
-    </div>
+            <Switch>
+              <Route path="/login" >
+                <Login />
+              </Route>
+              <Route path="/video" >
+                <Video />
+              </Route>
+              <Route path="/date" >
+                <Date />
+              </Route>
+            </Switch>
+              {/* <Login/> */}
+              {/* <Video /> */}
+              {/* <Date /> */}
+          </div>
+      </Router>
   );
 }
 

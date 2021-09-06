@@ -1,4 +1,32 @@
 .outer_wrapper{
-    width: 50%;
+    width: 42%;
+    height: 49vh;
     margin: auto;
+    position: relative;
+}
+.outer_wrapper:hover .circle{
+    display: inline;
+}
+.outer_wrapper:hover .thumbNail{
+    display: inline;
+}
+.thumbNail{
+    position: absolute;
+    bottom: 110px;
+    right: 90px;
+    z-index: 1;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+.circle{
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    z-index: 1;
+    border-radius: 50%;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(121, 117, 117);
 }
