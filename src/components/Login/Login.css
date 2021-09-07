@@ -118,6 +118,9 @@ input:focus{
     background: #4285F4 0% 0% no-repeat padding-box;
     margin-bottom: 20px;
 }
+.google_btn:hover, .facebook_btn:hover{
+    cursor: pointer;
+}
 .google_btn_logo, .facebook_btn_logo{
     width: 35px;
     height: 35px;
@@ -138,7 +141,6 @@ input:focus{
     font: normal normal normal 13px/19px Myriad Pro;
     letter-spacing: 0px;
     color: #EE2D6E;
-
 }
 .err_msg{
     display: none;

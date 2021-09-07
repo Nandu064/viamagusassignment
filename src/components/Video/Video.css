@@ -21,6 +21,7 @@
 }
 .circle{
     position: absolute;
+    background: url('http://img.youtube.com/vi/ysz5S6PUM-U/0.jpg') no-repeat ;
     bottom: 60px;
     right: 60px;
     z-index: 1;
